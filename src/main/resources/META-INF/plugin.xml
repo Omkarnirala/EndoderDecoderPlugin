@@ -1,0 +1,20 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.example.EndoderDecoderPlugin</id>
+    <name>EndoderDecoderPlugin</name>
+    <version>1.0</version>
+    <vendor email="omkarnirala@gmail.com" >Omkar Nirala</vendor>
+    <description>This plugin adds encoding and decoding functionality.</description>
+    <depends>com.intellij.modules.lang</depends>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="EncodeDecode" anchor="right" factoryClass="com.example.endoderdecoderplugin.panel.EncodeDecodeToolWindowFactory"/>
+
+    </extensions>
+</idea-plugin>
